@@ -1,0 +1,97 @@
+//
+//home.scss
+//
+
+.home {
+    .home-heading {
+        h6 {
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            font-size: 50px;
+            font-weight: 600;
+        }
+    }
+
+    .home-btn {
+        margin-top: 30px;
+
+        .btn {
+            position: relative;
+            padding: 12px 64px 12px 30px;
+
+            span {
+                position: absolute;
+                top: 3.5px;
+                right: 3.5px;
+
+                i {
+                    font-size: 20px;
+                }
+            }
+
+            &:hover,
+            &:focus {
+                .btn-icon {
+                    background-color: $white;
+                    color: $primary;
+                }
+            }
+        }
+
+        .modal-btn {
+            i {
+                font-size: 34px;
+            }
+        }
+    }
+
+    .home-modal {
+        border: 0;
+        background-color: transparent;
+
+        .btn-close {
+            width: 24px;
+            height: 24px;
+            background-color: rgba($dark, 0.5);
+            border-radius: 4px;
+            position: relative;
+            top: 60px;
+            right: 3px;
+            z-index: 3;
+
+            &:hover,
+            &:focus {
+                opacity: 0.5;
+            }
+        }
+
+        video {
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    .client-list {
+        img {
+            opacity: 0.6;
+            margin: 8px 0;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .home {
+        .home-img {
+            height: auto;
+            max-width: 100%;
+        }
+    }
+}

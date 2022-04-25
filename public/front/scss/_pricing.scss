@@ -1,0 +1,57 @@
+//
+//  peicing
+//
+
+.pricing {
+    .pricing-bg {
+        position: relative;
+
+        &::before {
+            background-image: url(../images/pricing-box.png);
+            content: "";
+            position: absolute;
+            top: -54px;
+            left: 60px;
+            z-index: -3;
+            height: 200px;
+            width: 200px;
+            background-repeat: no-repeat;
+            transform: rotateZ(60deg) translate(-5em, 7.5em);
+        }
+    }
+
+    .pricing-box {
+        transition: all 0.8s;
+        background-color: $light;
+        border-radius: 12px;
+
+        &:hover {
+            transform: translateY(-10px);
+            border: 1px solid $dark !important;
+            transition: all 0.9s;
+        }
+
+        ul {
+            li {
+                padding: 14.2px 0;
+            }
+        }
+    }
+
+    .active {
+        border: 1px solid $dark !important;
+        transform: translateY(-10px);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .bg-shape {
+        background: transparent;
+    }
+    .pricing-bg {
+        &::before {
+            display: none;
+        }
+    }
+}

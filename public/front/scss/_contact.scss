@@ -1,0 +1,46 @@
+//
+//  contact
+//
+
+
+.contact-form {
+    .input-group-text {
+        padding: 12px 15px;
+        border: none;
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        bottom: 0;
+
+        &::before {
+            content: "";
+            color: rgba(37, 39, 43, 0.5);
+            right: 0px;
+            position: absolute;
+            border-left: 15px;
+            border-right: 1px solid #ced4da;
+            top: 0;
+            bottom: 0;
+        }
+    }
+
+    .form-control {
+        padding: 12px 20px !important;
+        padding-left: 58px !important;
+        border-color: rgba(37, 39, 43, 0.2);
+        display: block;
+        width: 100%;
+        padding: 0.375rem 0.75rem;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        appearance: none;
+        border-radius: 0.25rem;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+}

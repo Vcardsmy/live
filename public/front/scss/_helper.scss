@@ -1,0 +1,163 @@
+//
+// helper.scss
+//
+
+/*******color Loop*******/
+@each $color, $value in $theme-colors {
+    .text-#{$color} {
+        color: $value !important;
+    }
+    .bg-#{$color} {
+        background-color: $value !important;
+    }
+}
+
+.section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+/*******font-size*******/
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-13 {
+    font-size: 13px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-17 {
+    font-size: 17px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-19 {
+    font-size: 19px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+/**********bg-overlay***************/
+
+.bg-overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($primary, 0.08);
+}
+
+/***********heading***************/
+
+.home-shape-arrow {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 25px;
+    z-index: 1;
+    left: 0;
+
+    i {
+        background: rgba($white, 1);
+        border: 1px solid $primary;
+        height: 50px;
+        width: 50px;
+        margin: 0 auto;
+        line-height: 50px;
+        border-radius: 30px;
+    }
+
+    .arrow-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        display: inline-block;
+    }
+}
+
+.heading {
+    position: relative;
+    text-transform: capitalize;
+    font-size: 32px;
+    z-index: 0;
+
+    &::before {
+        position: absolute;
+        content: "";
+        background-color: rgba($primary, 0.4);
+        height: 43px;
+        width: 72px;
+        display: inline-block;
+        border-radius: 32% 27% 93% 8%;
+        z-index: -1;
+        margin: 0 auto;
+        top: -8px;
+    }
+}
+
+
+#back-to-top {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background: $dark;
+    border-color: transparent;
+    border-radius: 50%;
+    color: $white;
+    transition: all 0.5s ease;
+    display: none;
+
+    &:hover {
+        background-color: $primary;
+    }
+}
+
+/*******font-weight*******/
+.fw-medium {
+    font-weight: $font-weight-medium;
+}
+
+.fw-semibold {
+    font-weight: $font-weight-semibold;
+}
+
+/*******link color*******/
+.primary-link {
+    color: $dark;
+    transition: all 0.5s ease;
+
+    &:hover {
+        color: $primary;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px !important;
+    }
+}

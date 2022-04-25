@@ -1,0 +1,65 @@
+.img-box > input {
+  display: none;
+}
+
+.template-border {
+  border: 3px solid #0b9ef7 !important;
+  border-radius: 10px !important;
+}
+
+.screen.image {
+  padding: 5px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  margin: auto;
+  border-radius: 5px;
+  height: auto;
+}
+.screen.image img {
+  width: 100%;
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  height: 400px;
+  transition: 5s all ease;
+}
+.screen.image:hover img {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.img-radio {
+  padding: 5px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  margin: auto;
+  border-radius: 5px;
+  height: auto;
+}
+.img-radio img {
+  width: 100%;
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  height: 400px;
+  transition: 5s all ease;
+}
+.img-radio:hover img {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.img-radio.img-border {
+  border: 3px solid #0b9ef7 !important;
+  border-radius: 10px !important;
+}

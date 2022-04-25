@@ -1,0 +1,59 @@
+//
+//  about
+//
+
+.about-title {
+    position: relative;
+    z-index: 99;
+    letter-spacing: 5px;
+    font-size: 14px;
+
+    span {
+        background-color: $primary;
+        height: 12px;
+        width: 60px;
+        display: inline-block;
+        position: absolute;
+        opacity: .12;
+    }
+}
+
+.about-link {
+    a {
+        color: #8798ab;
+        position: relative;
+        display: inline-block;
+        font-size: 14px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -9%;
+            height: 1px;
+            width: 50%;
+            background: #8798ab;
+            transition: 0.3s;
+        }
+    }
+
+    i {
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    &:hover {
+        i {
+            opacity: 1;
+            margin: 0 0 0 5px;
+        }
+    }
+}
+
+
+.buy-about-img {
+    background: linear-gradient(22deg, #f6f6f6 35%, #eeeeee calc(35% + 1px),
+        #f6f6f6 45%, #ededed calc(45% + 1px), #ededed 65%, #f6f6f6 calc(65% + 1px), #f6f6f6 100%);
+    background-blend-mode: overlay, exclusion;
+    padding: 25px;
+}

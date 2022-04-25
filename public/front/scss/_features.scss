@@ -1,0 +1,92 @@
+//
+//  featuers
+//
+
+.features-bg {
+    background-color: rgba($primary, 0.04);
+}
+
+.features {
+    span {
+        width: 10px;
+        height: 10px;
+        background: $dark;
+        border-radius: 30px;
+    }
+
+    .features-card {
+        border: none;
+        background: transparent;
+        text-align: center;
+
+        .avatar-md {
+            margin: 0 auto;
+            position: relative;
+
+            .avatar-title {
+                background-color: rgba($primary, 0.2) !important;
+                color: $primary;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    border-radius: 50%;
+                    width: 64px;
+                    height: 64px;
+                    background-color: rgba($primary, 0.1) !important;
+                    transition: all 0.4s;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    border-radius: 50%;
+                    width: 64px;
+                    height: 64px;
+                    background-color: rgba($primary, 0.1) !important;
+                    transition: all 0.4s;
+                }
+
+                i {
+                    font-size: 25px;
+                }
+            }
+        }
+
+        &:hover {
+            .avatar-md {
+                .avatar-title {
+                    &::before {
+                        width: 78px;
+                        height: 78px;
+                    }
+
+                    &::after {
+                        width: 90px;
+                        height: 90px;
+                    }
+                }
+            }
+        }
+    }
+
+    .features-bg {
+        background-color: rgba($primary, 0.04);
+    }
+}
+
+.features-list {
+    li {
+        margin: 20px 0;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .features-box {
+        .card-body {
+            padding: 45px !important;
+        }
+    }
+}
+
